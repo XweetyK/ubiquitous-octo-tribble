@@ -84,4 +84,10 @@ public class RandomSpawner : MonoBehaviour {
             }
         }
     }
+
+    private void Update() {
+        if (Input.GetKey(KeyCode.F12)) {
+            ricardo.SetActive(true);
+        }
+    }
 }
