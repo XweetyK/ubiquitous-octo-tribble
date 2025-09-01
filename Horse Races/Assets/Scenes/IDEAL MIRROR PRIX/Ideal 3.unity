@@ -7684,7 +7684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeLanguage: ES
+  activeLanguage: 
   localizationFile: {fileID: 4900000, guid: d6fd29068bb1678428af47394c34dd91, type: 3}
 --- !u!4 &1653929401
 Transform:

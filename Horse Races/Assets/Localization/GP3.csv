@@ -1,0 +1,70 @@
+Key,Description,Standard,ES
+CHARACTER.Demian,,Demian,Demian
+CHARACTER.Yi Sang,,Yi Sang,Yi Sang
+CHARACTER.Gregor,,Gregor,Gregor
+CHARACTER.Faust,,Faust,Faust
+CHARACTER.Ideal,,Ideal,Ideal
+CHARACTER.Narrator,,Narrator,Narrator
+CHARACTER.Heathcliff,,Heathcliff,Heathcliff
+CHARACTER.Dante,,Dante,Dante
+CHARACTER.John,,John,John
+CHARACTER.Don Quixote,,Don Quixote,Don Quixote
+SAY.GP3.9.Ideal,,"By tomorrow’s dawn, the rest of them-","Para mañana al amanecer, el resto de ellos-"
+SAY.GP3.8.Dante,,<I guess you’re right…>,<Supongo que tienes razón…>
+SAY.GP3.7.Dante,,<O-one more chance! That’s all I ask!>,<¡U-un intento más! ¡Eso es todo lo que pido!>
+SAY.GP3.138.Dante,,"<You won, Ideal.>","<Ganaste, Ideal>"
+SAY.GP3.5.Narrator,,Yi Sang... did we fail you?,Yi Sang... ¿Acaso te fallamos?
+SAY.GP3.4.Narrator,,I look at my exhausted horses.,Veo a mis exhaustos caballos.
+SAY.GP3.3.Narrator,,No… This can’t be the end.,No… Este no puede ser el fin.
+SAY.GP3.2.Ideal,,"It will be in vain. Repeat it as many times as you desire, but the result will remain the same.","Será en vano. Puedes repetirlo tantas veces como quieras, pero el resultado seguirá siendo el mismo."
+SAY.GP3.1.Ideal,,"As I previously stated, you have no chance against me.
+","Tal y como fue afirmado previamente, no tienes oportunidad contra mí."
+SAY.GP3.22.Narrator,,"I wish I could wink right now, I wish they could understand.","Quisiera poder guiñarles el ojo en este momento, quisiera que me pudieran entender."
+SAY.GP3.14.Dante,,<What do you mean?>,<¿A qué te refieres?>
+SAY.GP3.13.Ideal,,No force on Earth shall stop our winning streak.,No hay fuerza en esta tierra capaz de parar nuestra racha ganadora.
+SAY.GP3.12.Don Quixote,,MANAGER ESQUIRE! THOU MUST NOT ALLOW THIS FOUL DEMON IN OUR HERD!!!,¡ILUSTRÍSIMO GERENTE! ¡NO DEBÉIS PERMITIR QUE ESTE ABYECTO DEMONIO MANCILLE NUESTRO HATO!
+SAY.GP3.11.Heathcliff,,WHAT?! ARE YOU NUTS?!,"¿¡QUÉ!? ¿¡FLACO, ESTAS EN PEDO!?"
+SAY.GP3.10.Dante,,"<Of course, we can’t go to any tournament without proper training.>","<Por supuesto, no podemos ir a ninguna competencia sin pasar primero por el entrenamiento adecuado.>"
+SAY.GP3.137.Narrator,,I hear the voices of disapproval of my horses behind me.,Escucho las palabras de desaprobación de los caballos detrás de mí.
+SAY.GP3.21.Narrator,,"I turn around to give one last glance at the last unidealized horses, who in return, look at me with a mix of anger and disappointment in their eyes.","Me doy la vuelta para darle un último vistazo a los caballos sin idealizar, quienes a su vez, me miran con una combinación de enojo y decepción en sus ojos."
+SAY.GP3.136.Ideal,,"I am the Ideal, Dante.
+","Soy el Ideal, Dante."
+SAY.GP3.135.Narrator,,"No matter how much we tried, we were no rivals for him.","Sin importar cuánto hemos intentado, no pudimos hacerle competencia."
+SAY.GP3.139.Narrator,,"I sigh in despair, but a sudden idea sparks in my mind.","Suspiro de la desesperación, pero una idea de repente comienza a brillar en mi mente."
+SAY.GP3.164.Narrator,,"In a quick movement, I push Ideal inside and close the door, starting the simulation.","Con un rápido movimiento, empujo a Ideal dentro y cierro la puerta, iniciando la simulación."
+SAY.GP3.163.Narrator,,I open the door to the Mirror Track.,Abro la puerta del Circuito Espejo
+SAY.GP3.162.Dante,,<Get in.>,<Entra.>
+SAY.GP3.161.Ideal,,That is not the “getting ready” I was referring to. I am already in my most ideal form.,No me refería a eso con ‘alistarnos’.  Yo ya soy mi versión más ideal.
+SAY.GP3.160.Dante,,<I said get in!>,<¡Dije que entres!>
+SAY.GP3.158.Narrator,,But it’s too late to complain now.,Pero es muy tarde para quejarse.
+SAY.GP3.157.Narrator,,Ideal frowns. It seems he’s starting to notice what I’m trying to do.,Ideal frunce el ceño. Parece que está comenzando a darse cuenta de lo que estoy intentando hacer.
+SAY.GP3.156.Dante,,"<For an “ideal” horse, I expected you to be aware of the rules around here.>","<Para un supuesto caballo ""ideal"", esperaba que conocieras las reglas del lugar.>"
+SAY.GP3.155.Dante,,<Every horse in this stable is required to train properly before a race. No exceptions.>,<Todos y cada uno de los caballos de este establo deben de entrenar adecuadamente antes de una carrera. Sin excepciones.>
+SAY.GP3.154.Ideal,,Shall we get ready for the next race?,¿Nos alistamos para la próxima carrera?
+SAY.GP3.153.Dante,,<This is where you’re wrong.>,<Ahí es donde te equivocas.>
+SAY.GP3.152.Dante,,<... Will be idealized.>,<… Serán idealizados.>
+SAY.GP3.151.Ideal,,"I reiterate, there’s no such need-","Reitero, no hay necesidad de tal-"
+SAY.GP3.150.Ideal,,"So, dear manager.","Entonces, querido gerente."
+SAY.GP3.149.Ideal,,Correct.,Correcto.
+SAY.GP3.148.Ideal,,I believe I have made myself clear when I announced no horse but me would be required in this stable.,Creo que me he dado a entender cuando afirmé que ni un otro caballo es necesario aparte de mí.
+SAY.GP3.147.Ideal,,No… My winning streak.,No… Mi racha ganadora.
+SAY.GP3.146.Narrator,,"But I have a plan, I need them to trust in me.",Pero tengo un plan. Y necesito que confíen en mí.
+SAY.GP3.145.Dante,,"<I must honor my word. As the manager, I officially welcome you to the Limbus Stable, Ideal.>","<Tengo que hacerle honor a mi palabra. Como gerente, te doy oficialmente la bienvenida al Establo Limbus, Ideal.>"
+SAY.GP3.144.Narrator,,A sinister smile on Ideal’s face sends shivers down my spine.,La siniestra sonrisa en el rostro de Ideal me pone la piel de gallina.
+SAY.GP3.188.Ideal,,"I WILL WIN HERE AND ANYWHERE, OVER AND OVER AGAIN.","GANARÉ AQUÍ Y EN CUALQUIER PISTA, UNA Y OTRA VEZ."
+SAY.GP3.187.Ideal,,DON’T MAKE ME LAUGH!,¡NO ME HAGAS REIR!
+SAY.GP3.186.Ideal,,HAHAHAHAHA!,¡JAJAJAJAJA!
+SAY.GP3.185.Ideal,,You think this miserable excuse of a horse can do anything against an Ideal Champion?,¿De verdad crees que esa patética excusa de caballo puede hacer algo contra un Campeón Ideal?
+SAY.GP3.184.Ideal,,"You’ve really run out of options, Dante.","De verdad que se te acabaron las opciones, Dante."
+SAY.GP3.183.Ideal,,Again…,Otra vez…
+SAY.GP3.182.Ideal,,I never thought… I’d end up here…,Nunca pensé… que terminaría aquí.
+SAY.GP3.181.Ideal,,Haaah… haha…,Ahhh… Jaja…
+SAY.GP3.180.Narrator,,"I try to reach him, but my words fall silent in the Mirror Track.","Traté de hablarle, pero mis palabras se desvanecían en el Hipódromo Espejo"
+SAY.GP3.179.Dante,,<Only you can stop Ideal now!>,<¡Solo tú puedes detener a Ideal!>
+SAY.GP3.178.Dante,,"<I need you to run, run as fast as you can.>","<Necesito que corras ahora, que galopes lo más rápido que puedas>"
+SAY.GP3.177.Dante,,<YI SANG! YOU’RE STILL THERE!>,<¡YI SANG! ¡AÚN ESTÁS AQUÍ!>
+SAY.GP3.176.Narrator,,"One of them catches my attention. A horse is curled up in a corner, covering his head.","Uno de ellos atrae mi atención. Un caballo está en posición fetal en una esquina, cubriéndose la cabeza."
+SAY.GP3.175.Dante,,<Yi Sang…>,<Yi Sang…>
+SAY.GP3.174.Narrator,,I hear a laugh from inside the simulation.,Escuché una risa desde dentro de la simulación
+SAY.GP3.173.Narrator,,"Yi Sang’s ghosts are still there, stumbling around like zombies.","Los fantasmas de Yi Sang siguen ahí, tambaleando como si fueran zombis."
+SAY.GP3.172.Narrator,,"The simulation loads slowly, still as broken as the last time we used it.","La simulación se carga lentamente, aún estando igual de rota que la última vez que la usamos."

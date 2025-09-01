@@ -1,0 +1,31 @@
+Key,Description,Standard,ES
+CHARACTER.Demian,,Demian,Demian
+CHARACTER.Yi Sang,,Yi Sang,Yi Sang
+CHARACTER.Narrator,,Narrator,Narrator
+CHARACTER.Faust,,Faust,Faust
+CHARACTER.Gregor,,Gregor,Gregor
+CHARACTER.Heathcliff,,Heathcliff,Heathcliff
+CHARACTER.Dante,,Dante,Dante
+CHARACTER.Ideal,,Ideal,Ideal
+SAY.Endgame Dialogue.28.Dante,,<I can and I will.>,<Puedo y lo haré.>
+SAY.Endgame Dialogue.16.Dante,,<I can.>,<Sí puedo.>
+SAY.Endgame Dialogue.15.Dante,,"<You are Ideal, yes, But you are empty.>","<Eres el Ideal, sí, pero también estás vacío.>"
+SAY.Endgame Dialogue.14.Dante,,<That alone is more important than a hundred Ideal champions.>,"<Y eso lo hace más preciado e importante, más que cientos de Campeones Ideales.>"
+SAY.Endgame Dialogue.13.Dante,,<You're nothing like the Yi Sang we cherish and love. The one we built so many memories with.>,<No eres como el Yi Sang que tanto queremos. El Yi Sang con quien hemos compartido tantos recuerdos.>
+SAY.Endgame Dialogue.12.Dante,,"<Anyone can say you look just like our Yi Sang, but no matter how many times you win, you're nothing like him.>","<Cualquiera te verá y te confundirá con nuestro Yi Sang, pero no importa cuantas veces ganes, no serás como él.>"
+SAY.Endgame Dialogue.11.Dante,,<You're nothing.>,<No eres nada>
+SAY.Endgame Dialogue.10.Dante,,<But you're empty.>,<Pero estás vacío.>
+SAY.Endgame Dialogue.9.Ideal,,YOU TRICKED ME!!!,¡TÚ ME ENGAÑASTE!
+SAY.Endgame Dialogue.8.Dante,,<Because you're not my horse.>,<Porque no eres mi caballo.>
+SAY.Endgame Dialogue.7.Ideal,,I AM THE IDEAL!,¡YO SOY EL IDEAL!
+SAY.Endgame Dialogue.6.Ideal,,SHUT UP!,¡CÁLLATE!
+SAY.Endgame Dialogue.5.Ideal,,You can’t do this to me.,No puedes hacerme esto.
+SAY.Endgame Dialogue.4.Ideal,,This can’t be.,Esto no puede ser.
+SAY.Endgame Dialogue.3.Ideal,,N-no...,N-no…
+SAY.Endgame Dialogue.27.Dante,,"Goodbye, Ideal.","<Adios, Ideal.>"
+SAY.Endgame Dialogue.26.Ideal,,YOU CAN’T LEAVE ME HERE!!,¡¡NO ME PUEDES DEJAR AQUÍ!!
+SAY.Endgame Dialogue.29.Ideal,,I DON'T DESERVE TO BE TRAPPED IN HERE!,¡NO MEREZCO ESTAR ENCERRADO EN ESTE LUGAR!
+\nI’VE EARNED MY PLACE ON YOUR PODIUM!,,,¡ME HE GANADO MI PROPIO LUGAR EN TU PODIO!
+\n,,,
+SAY.Endgame Dialogue.31.Ideal,,I CAN BE ALL THIS STABLE NEEDS TO WIN.\nWHY DO YOU HATE ME?!,PUEDO SER TODO LO QUE ESTE ESTABLO NECESITA.\n¿PORQUÉ ME ODIAS?
+SAY.MidGameDialogue.3.Dante,,<YI SANG! YOU CAN DO IT!!!>                                                                                                                              ,<¡YI SANG! ¡¡PUEDES HACERLO!!>                                                                                                                              
