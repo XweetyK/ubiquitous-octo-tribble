@@ -272,7 +272,7 @@ namespace Fungus
         /// <summary>
         /// Language to use at startup, usually defined by a two letter language code (e.g DE = German).
         /// </summary>
-        public virtual string ActiveLanguage { get { return activeLanguage; } }
+        public virtual string ActiveLanguage { get { return activeLanguage; } set { activeLanguage = value; } }
 
         /// <summary>
         /// CSV file containing localization data which can be easily edited in a spreadsheet tool.

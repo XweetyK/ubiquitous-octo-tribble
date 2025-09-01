@@ -1527,6 +1527,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406691412}
   m_CullTransparentMesh: 0
+--- !u!1 &411105051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411105053}
+  - component: {fileID: 411105052}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &411105052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411105051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d591658e9d787549b8fda8dfe52ecf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: 1
+  localization: {fileID: 0}
+  DialogueBox:
+    Active: 0
+    DanteDialog: {fileID: 0}
+    HeathDialog: {fileID: 0}
+    YiSangDialog: {fileID: 0}
+    GregorDialog: {fileID: 0}
+    FaustDialog: {fileID: 0}
+    DonDialog: {fileID: 0}
+    IdealDialog: {fileID: 0}
+  MainMenu:
+    Active: 1
+    StartBtn: {fileID: 220270061}
+    SettingsBtn: {fileID: 1117907126}
+    ExtraBtn: {fileID: 1087698457}
+    JukeboxBtn: {fileID: 179016149}
+    QuitBtn: {fileID: 2044666235}
+    CathyTitle: {fileID: 287747170}
+    CathyText: {fileID: 1117109150}
+    CathyYesBtn: {fileID: 1189049980}
+    CathyNoBtn: {fileID: 717124329}
+    SettingsTitle: {fileID: 1083109696}
+    PopUpTitle: {fileID: 322046205}
+    PopUpText: {fileID: 677516941}
+    PopUpContinue: {fileID: 58036519}
+  TutorialMenu:
+    Active: 0
+    Title: {fileID: 0}
+    Line: []
+    TitleES: {fileID: 0}
+    TitleEN: {fileID: 0}
+    LineES: []
+    LineEN: []
+  PauseMenu:
+    Active: 0
+    Title: {fileID: 0}
+    ResumeBtn: {fileID: 0}
+    MenuBtn: {fileID: 0}
+--- !u!4 &411105053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411105051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &450052355 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2096407586945964198, guid: 0d9e821f0a0fbae42b4071e6293b068c,
@@ -2153,8 +2235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15.2}
-  m_SizeDelta: {x: 1078.7878, y: 436.35706}
+  m_AnchoredPosition: {x: 0, y: -58.361}
+  m_SizeDelta: {x: 1078.7878, y: 522.67896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &677516940
 MonoBehaviour:

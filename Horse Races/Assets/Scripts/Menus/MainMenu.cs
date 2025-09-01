@@ -181,20 +181,21 @@ public class MainMenu : MonoBehaviour {
             buttons[2].color = Color.gray;
             buttons[3].text = "-???-";
             buttons[3].color = Color.gray;
-        } else {
-            buttons[2].text = "-extra story-";
-            buttons[3].text = "-jukebox-";
         }
+        //} else {
+        //    buttons[2].text = "-extra story-";
+        //    buttons[3].text = "-jukebox-";
+        //}
 
-        if (PlayerPrefs.HasKey("Story")) {
-            buttons[0].text = "-continue-";
-        } else {
-            if (GlobalVar.Instance.IdealComplete) {
-                buttons[0].text = "-SELECT STAGE-";
-            } else {
-                buttons[0].text = "-START!-";
-            }
-        }
+        //if (PlayerPrefs.HasKey("Story")) {
+        //    buttons[0].text = "-continue-";
+        //} else {
+        //    if (GlobalVar.Instance.IdealComplete) {
+        //        buttons[0].text = "-SELECT STAGE-";
+        //    } else {
+        //        buttons[0].text = "-START!-";
+        //    }
+        //}
         if (menu != 6) {
             buttons[menu].color = Color.yellow;
         } else {

@@ -9,6 +9,7 @@ public class LoadingScreen : MonoBehaviour
     [SerializeField] Image bar;
     [SerializeField] Text flavorText;
     [SerializeField] SceneChanger sceneChanger;
+    [SerializeField] public string[] messages;
     int randomText;
     public bool idealEnd = false;
 
@@ -25,16 +26,16 @@ public class LoadingScreen : MonoBehaviour
         randomText = Random.Range(1, 5);
         switch (randomText) {
             case 1:
-                flavorText.text = "Horses can run at horse speed.";
+                flavorText.text = messages[0];//"Horses can run at horse speed.";
                 break;
             case 2:
-                flavorText.text = "Demian is in the code but he does nothing\n(or so we think).";
+                flavorText.text = messages[1];//"Demian is in the code but he does nothing\n(or so we think).";
                 break;
             case 3:
-                flavorText.text = "You're never safe from a horse.";
+                flavorText.text = messages[2];//"You're never safe from a horse.";
                 break;
             case 4:
-                flavorText.text = "Press UP for a surprise (no, not here).";
+                flavorText.text = messages[3];//"Press UP for a surprise (no, not here).";
                 break;
         }
     }
