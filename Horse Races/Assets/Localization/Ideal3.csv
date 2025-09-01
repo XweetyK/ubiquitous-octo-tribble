@@ -1,0 +1,92 @@
+Key,Description,Standard,ES
+CHARACTER.Demian,,Demian,Demian
+CHARACTER.Yi Sang,,Yi Sang,Yi Sang
+CHARACTER.Ideal,,Ideal,Ideal
+CHARACTER.Narrator,,Narrator,Narrator
+CHARACTER.Heathcliff,,Heathcliff,Heathcliff
+CHARACTER.Faust,,Faust,Faust
+CHARACTER.Dante,,Dante,Dante
+CHARACTER.Gregor,,Gregor,Gregor
+SAY.Ideal3.158.Narrator,,"I immediately turn around and try to reach the corridor, but someone grabs my wrist to stop me from leaving.","Me doy la vuelta inmediatamente e intento llegar al pasillo, pero alguien me agarra la muñeca para impedirme salir."
+SAY.Ideal3.163.Narrator,,To save Yi Sang.,Para salvar a Yi Sang.
+SAY.Ideal3.162.Narrator,,"No, to save everyone.","No, para salvar a todos."
+SAY.Ideal3.83.Ideal,,The Ideal Mirror Prix shall begin.,El Prix del Espejo Ideal ha de comenzar.
+SAY.Ideal3.82.Narrator,,"I don’t know how many horses are left unidealized or who they are, but I know that no matter what happens or how strong our rivals are, my horses will never let me down.","Todavía no sé cuantos caballos han sido idealizados o quienes lo están, pero sé que sin importar que pase o que tan fuerte sean nuestros oponentes, mis caballos nunca me defraudarán."
+SAY.Ideal3.161.Narrator,,We can do this.,Podemos lograrlo.
+SAY.Ideal3.79.Narrator,,"All or nothing, I don’t see any other way out right now.",Es todo o nada. No veo de otra.
+SAY.Ideal3.78.Dante,,<No matter how many races we win. We can’t leave Yi Sang behind.>,<No importa cuantas carreras ganemos. No podemos dejar a Yi Sang atrás.>
+SAY.Ideal3.77.Ideal,,Is that so...,
+SAY.Ideal3.76.Narrator,,The man in front of me frowns irritated.,"La persona frente a mí frunce el ceño, irritado."
+SAY.Ideal3.75.Ideal,,I propose a deal.,Te propongo un trato.
+SAY.Ideal3.74.Ideal,,One last race. An “Ideal Mirror Prix” if you will.,"Una última carrera. Un ""Prix del Espejo Ideal"", por así decirlo."
+SAY.Ideal3.73.Ideal,,Confront your bad apples against me and allow me to prove to you how useless their attempts are.,Has competir tus manzanas podridas contra mí y permíteme mostrarte que tan inútiles son sus esfuerzos.
+SAY.Ideal3.72.Ideal,,How useless this stable is without its Ideal Champion.,Que tan inútil es tu establo sin su Campeón ideal.
+SAY.Ideal3.71.Dante,,<Will Yi Sang come back if we defeat you?>,<¿Yi Sang volverá si te derrotamos?>
+SAY.Ideal3.70.Ideal,,"The odds are against you, dear manager, but if luck decides to be on your side, then so be it.","Las probabilidades están en tu contra, querido gerente, pero si la suerte decide estar de tu lado, así será."
+SAY.Ideal3.69.Narrator,,This is too risky.,Esto es demasiado arriesgado.
+SAY.Ideal3.68.Dante,,<Fine. Let’s do this.>,<Bien… Hagámoslo.>
+SAY.Ideal3.160.Narrator,,The man in front of me smiles silently and offers me his hand to close the deal.,La persona frente a mí sonríe sin decir nada y me ofrece estrechar las manos para cerrar el trato.
+SAY.Ideal3.66.Narrator,,"With my heart in my throat, I shake his cold hand.","Con el corazón en la boca, estrecho su fría mano."
+SAY.Ideal3.159.Narrator,,He takes a moment in silence to think.,Se toma un momento en silencio para pensar.
+SAY.Ideal3.64.Dante,,"<No, this is not right.>","<No, esto no está bien.>"
+SAY.Ideal3.63.Ideal,,"Only a few horses remain unchanged. You could say… A few bad apples are necessary to appreciate the sweet, juicy ones of the batch. ",Solo unos pocos caballos permanecen sin cambio alguno. Podrías decir que… uno solo puede disfrutar mejor las manzanas más jugosas si las comparas con las podridas...
+SAY.Ideal3.62.Ideal,,But Yi Sang? He is waiting exactly where you left him.,Pero Yi Sang? Él está esperando exactamente donde lo dejaste.
+SAY.Ideal3.157.Narrator,,Did we bring the wrong Yi Sang?,¿Acaso trajimos al Yi Sang equivocado?
+SAY.Ideal3.60.,,Does that mean...,¿Acaso eso significa que…?
+SAY.Ideal3.59.Narrator,,I stop for a second to look at the man in front of me.,Me detuve un segundo para mirar a la persona que estaba frente a mí.
+SAY.Ideal3.156.Narrator,,We decided to abort the practice and retreat…,Decidimos detener la prueba y salir de allí…
+SAY.Ideal3.57.Dante,,<...>,<...>
+SAY.Ideal3.56.Dante,,"<Heathcliff was right, wasn't he?>","<Heathcliff estaba en lo cierto, ¿no?>"
+SAY.Ideal3.55.Dante,,<Who are you?>,<¿Quién eres?>
+SAY.Ideal3.155.Narrator,,"Weak, almost immobile copies of himself. The image was too perturbing for Yi Sang, his sanity was reaching its limit.","Copias débiles y casi inmóviles de sí mismo. La escena fue demasiado perturbadora para Yi Sang, su cordura estaba llegando al límite."
+SAY.Ideal3.53.Ideal,,"I am your champion horse, Dante.","Soy tu caballo ganador, Dante."
+SAY.Ideal3.52.Ideal,,I am the Ideal.,Soy el Ideal.
+SAY.Ideal3.154.Narrator,,"For some unknown reason, the Mirror Track started collapsing, and Yi Sang was surrounded by defective ghosts.","Por alguna razón desconocida, el Circuito Espejo comenzó a colapsar, y Yi Sang fue rodeado por fantasmas defectuosos."
+SAY.Ideal3.50.Dante,,<Ideal? Where is Yi Sang? What have you done to the others?!>,<¿Ideal? ¿Dónde está Yi Sang? ¿¡Qué le hiciste a los otros!?>
+SAY.Ideal3.49.Ideal,,"The other contestants were nothing but pebbles on the road to victory. I have been carefully molding them, one by one, in my image and likeness.","Los otros concursantes no eran nada más que piedras en el camino hacia la victoria. Los he estado moldeando cuidadosamente, uno por uno, a mi imagen y semejanza."
+SAY.Ideal3.48.Ideal,,"Don't you remember, Dante?","¿No lo recuerdas, Dante?"
+SAY.Ideal3.47.,,Where I left him...?,¿”Donde lo dejé”?
+SAY.Ideal3.46.Dante,,<The Mirror Tracks…>,Los Circuitos Espejo…
+\n,,,
+SAY.Ideal3.45.Ideal,,Correct.,Correcto.
+SAY.Ideal3.44.Narrator,,The Mirror Tracks. A virtual space built inside Mephistopheles for the horses to train for the upcoming races.,Los Circuitos Espejo. Un espacio virtual dentro de Mefistófeles con el fin de que los caballos entrenen para sus futuras carreras.
+SAY.Ideal3.153.Narrator,,It didn’t go well.,No fue nada bien.
+SAY.Ideal3.152.Narrator,,"Some days ago, Yi Sang asked me to test his speed against his previous records, or as Faust calls them, “Ghosts”.","Unos días atrás, Yi Sang me pidió probar su velocidad contra la de sus antiguos récords, o como Faust los llama, “Fantasmas”."
+SAY.Ideal3.41.Dante,,<We must rescue Yi Sang.>,<Tenemos que rescatar a Yi Sang.>
+SAY.Ideal3.40.Ideal,,There is no need for such an inefficient equine.,Un équido tan ineficiente no es necesario.
+SAY.Ideal3.39.Ideal,,"The champion this stable needs is right before your eyes, Dante. I am your key to victory.","El campeón que este establo necesita está ante tus ojos, Dante. Soy tu clave para la victoria."
+SAY.Ideal3.38.Dante,,<...>,<...>
+SAY.Ideal3.37.Dante,,"<Now is not the time for that, Yi Sang. Can’t you see what’s going o->","<No es tiempo para eso, Yi Sang. ¿No puedes ver lo que está-?"
+SAY.Ideal3.36.Ideal,,Shall we proceed with the next race?,¿Procedemos a la siguiente carrera?
+SAY.Ideal3.151.Narrator,,Heathcliff has been helping Yi Sang train his endurance under my supervision.,Heathcliff ha estado ayudando a Yi Sang a entrenar su resistencia física bajo mi supervisión.
+SAY.Ideal3.150.Ideal,,"I have... ""idealized"" them.",Los he idealizado.
+SAY.Ideal3.33.Gregor,,What do you mean?,¿A qué te refieres?
+SAY.Ideal3.32.Heathcliff,,Clockhead is right.,El relojete tiene razón.
+SAY.Ideal3.31.Heathcliff,,That bloke doesn’t give me good vibes. He is not Yi Sang.,Ese pibe no me da buena pinta. Él no es Yi Sang.
+SAY.Ideal3.29.Heathcliff,,"Hell if I know!? The way he acts is very different from the Yi Sang we know, and the same for everyone else!","¡¿Cómo querés que sepa?! La manera en la que se comporta es muy diferente a la del Yi Sang que conocemos, ¡Y podría decir lo mismo del resto!"
+SAY.Ideal3.149.Ideal,,I am no other but myself.,No soy nadie más que yo.
+SAY.Ideal3.27.Ideal,,"It is unkind to project your suspicions on a companion, Heathcliff.","Es cruel de tu parte proyectar tus sospechas en uno de tus compañeros, Heathcliff."
+SAY.Ideal3.26.Ideal,,Dante.,Dante.
+SAY.Ideal3.25.Gregor,,"So you have noticed it too, huh?","Así que también te diste cuenta, ¿eh?"
+SAY.Ideal3.24.Dante,,<Like Yi Sang?>,"<¿Algo Yi Sang, dices?>"
+SAY.Ideal3.23.Gregor,,"Did you get affected too, manager bud?","<¿Fuiste afectado también, jefazo?>"
+SAY.Ideal3.22.Dante,,<No! The pun was not intended!>,"<¡No! ¡El juego de palabras no fue a propósito!> 
+[Nota de traductor: Yi Sang en coreano es una palabra de múltiples significados, entre ellos ‘raro’]"
+SAY.Ideal3.21.Gregor,,Hmm...,Hmm...
+SAY.Ideal3.20.Gregor,,He’s been winning all the previous races. Maybe the other horses just want to imitate him for a chance to win a race? That’s the only thing I can think of.,Él ganó todas las anteriores carreras. ¿Quizás los otros caballos quieren imitarlo para tener más oportunidades de ganar? Eso es lo único que se me ocurre.
+SAY.Ideal3.19.Dante,,<That’s the thing…>,<Ese el tema…>
+SAY.Ideal3.18.Narrator,,"Oh no, she’s been affected too.","Oh no, ella también fue afectada."
+SAY.Ideal3.17.Gregor,,"Hey, manager bud!","Oiga, jefazo."
+SAY.Ideal3.16.Dante,,<Gregor! I’m happy to see someone normal.>,<¡Gregor! Me alegro de ver a alguien normal.>
+SAY.Ideal3.148.Gregor,,I swear I saw him at the finish line.,Juraría que lo ví en la línea de meta.
+SAY.Ideal3.14.Dante,,"<Faust, did you see that?>","<Faust, ¿viste eso?>"
+SAY.Ideal3.13.Faust,,...,...
+SAY.Ideal3.12.Dante,,<Faust?!>,<Faust?!>
+SAY.Ideal3.11.Narrator,,Something is wrong…,Algo anda mal…
+SAY.Ideal3.10.Narrator,,Yi Sang wasn’t even in this race. How is he winning?,Yi Sang ni siquiera estuvo en esta carrera. ¿Cómo es que volvió a ganar?
+SAY.Ideal3.9.Narrator,,I don't get it.,No lo entiendo.
+SAY.Ideal3.147.Gregor,,"Aw come on, what is he then? An envy peccatula?","Oh vamos, ¿qué es entonces? ¿Una peccatula envidiae?"
+SAY.Ideal3.126.Ideal,,Very well then.,Muy bien entonces.
+SAY.Ideal3.146.Dante,,<Yi Sang hasn’t been winning.>,<Yi Sang no ha estado ganando.>
+SAY.Ideal3.145.Gregor,,"Now that you mention it. Yeah, they behave very similarly to Yi Sang.","Hmm, ahora que lo dices. Sí que se comportan muy como Yi Sang."
+SAY.Ideal3.144.Gregor,,"I thought it was just me, but… They’re acting kinda odd, don’t you think?","Pensaba que solo era idea mia, pero… están actuando algo raro, ¿no crees?"

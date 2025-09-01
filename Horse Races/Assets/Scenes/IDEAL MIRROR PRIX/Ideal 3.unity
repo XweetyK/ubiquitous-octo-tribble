@@ -1971,8 +1971,13 @@ PrefabInstance:
       objectReference: {fileID: 2130606526}
     - target: {fileID: 456052695741438444, guid: ee86f53d07e72c945b74f58753a0f228,
         type: 3}
+      propertyPath: localizationId
+      value: Ideal3
+      objectReference: {fileID: 0}
+    - target: {fileID: 456052695741438444, guid: ee86f53d07e72c945b74f58753a0f228,
+        type: 3}
       propertyPath: blockViewHeight
-      value: 361
+      value: 599
       objectReference: {fileID: 0}
     - target: {fileID: 456052695741438444, guid: ee86f53d07e72c945b74f58753a0f228,
         type: 3}
@@ -7650,6 +7655,51 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 8939afbb5a486ed4ea202fb3ee511b49, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe1510f552c1bb94a8558c0f52487afd, type: 3}
+--- !u!1 &1653929399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653929401}
+  - component: {fileID: 1653929400}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1653929400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653929399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: ES
+  localizationFile: {fileID: 4900000, guid: d6fd29068bb1678428af47394c34dd91, type: 3}
+--- !u!4 &1653929401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653929399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1735093522 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4401149414055845505, guid: f27a49b47271c6c4c8792fb4519e9e98,
@@ -12893,7 +12943,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2130606526
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12912,7 +12962,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &2130606527
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

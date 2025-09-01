@@ -1476,7 +1476,7 @@ PrefabInstance:
     - target: {fileID: 456052695741438434, guid: ee86f53d07e72c945b74f58753a0f228,
         type: 3}
       propertyPath: nodeRect.x
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 456052695741438434, guid: ee86f53d07e72c945b74f58753a0f228,
         type: 3}
@@ -1798,6 +1798,11 @@ PrefabInstance:
       propertyPath: commandList.Array.data[60]
       value: 
       objectReference: {fileID: 2130606429}
+    - target: {fileID: 456052695741438444, guid: ee86f53d07e72c945b74f58753a0f228,
+        type: 3}
+      propertyPath: localizationId
+      value: GP3
+      objectReference: {fileID: 0}
     - target: {fileID: 456052695741438444, guid: ee86f53d07e72c945b74f58753a0f228,
         type: 3}
       propertyPath: blockViewHeight
@@ -5594,6 +5599,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 725957417}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1479437670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1479437672}
+  - component: {fileID: 1479437671}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1479437671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479437670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5724422a635e425bae0af9ffe2615d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeLanguage: 
+  localizationFile: {fileID: 4900000, guid: 152b611582026f244b6e747f14208208, type: 3}
+--- !u!4 &1479437672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479437670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1545736525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167804631136756593, guid: fe1510f552c1bb94a8558c0f52487afd,
@@ -11075,7 +11125,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Yi Sang... did we fail you?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11117,7 +11167,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I look at my exhausted horses.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11144,7 +11194,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "No\u2026 This can\u2019t be the end."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11226,7 +11276,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I wish I could wink right now, I wish they could understand.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11449,7 +11499,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I hear the voices of disapproval of my horses behind me.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11477,7 +11527,7 @@ MonoBehaviour:
   storyText: I turn around to give one last glance at the last unidealized horses,
     who in return, look at me with a mix of anger and disappointment in their eyes.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11605,7 +11655,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: No matter how much we tried, we were no rivals for him.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11708,7 +11758,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I sigh in despair, but a sudden idea sparks in my mind.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11757,7 +11807,7 @@ MonoBehaviour:
   storyText: In a quick movement, I push Ideal inside and close the door, starting
     the simulation.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11784,7 +11834,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I open the door to the Mirror Track.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11893,7 +11943,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "But it\u2019s too late to complain now."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -11921,7 +11971,7 @@ MonoBehaviour:
   storyText: "Ideal frowns. It seems he\u2019s starting to notice what I\u2019m trying
     to do."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12221,7 +12271,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: But I have a plan, I need them to trust in me.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -12276,7 +12326,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "A sinister smile on Ideal\u2019s face sends shivers down my spine."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1901152389}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
