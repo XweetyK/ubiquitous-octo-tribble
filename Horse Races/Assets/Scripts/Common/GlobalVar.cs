@@ -9,6 +9,7 @@ public class GlobalVar : MonoBehaviour
     public float BGMVolume { get; set; }
     public float SFXVolume { get; set; }
     public float MasterVolume { get; set; }
+    [SerializeField] Lang language;
 
     private void Awake() {
         if (Instance == null) {
@@ -30,6 +31,10 @@ public class GlobalVar : MonoBehaviour
         if (!PlayerPrefs.HasKey("MASTER")) {
             PlayerPrefs.SetFloat("MASTER", 0.8f);
         }
+        if (!PlayerPrefs.HasKey("Language")) {
+            PlayerPrefs.SetInt("Language", ((int)language));
+        }
+        Debug.Log(PlayerPrefs.GetInt("Language"));
 
         DontDestroyOnLoad(this.gameObject);
     }

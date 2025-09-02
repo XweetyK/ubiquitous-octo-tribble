@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &75599386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3305156294627241171, guid: 2ef7f756a921fe34296d509694a58b59,
-    type: 3}
-  m_PrefabInstance: {fileID: 3305156293664336373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &457843952
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af671a6796fa294ea365901dd1ba964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  language: 1
 --- !u!4 &1867305584
 Transform:
   m_ObjectHideFlags: 0
@@ -607,46 +602,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: SFXMixer
-      value: 
-      objectReference: {fileID: -6362749448940044803, guid: 11272de0d4ac481438a838247285eb42,
-        type: 2}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: SFXSource
-      value: 
-      objectReference: {fileID: 75599386}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: glitch.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: glitch.Array.data[0]
-      value: 
-      objectReference: {fileID: 24500006, guid: 11272de0d4ac481438a838247285eb42,
-        type: 2}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: glitch.Array.data[1]
-      value: 
-      objectReference: {fileID: -5762784207940204616, guid: 11272de0d4ac481438a838247285eb42,
-        type: 2}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: glitch.Array.data[2]
-      value: 
-      objectReference: {fileID: -4875508309424145834, guid: 11272de0d4ac481438a838247285eb42,
-        type: 2}
-    - target: {fileID: 3305156293495031637, guid: 2ef7f756a921fe34296d509694a58b59,
-        type: 3}
-      propertyPath: glitch.Array.data[3]
-      value: 
-      objectReference: {fileID: 7761204306207144818, guid: 11272de0d4ac481438a838247285eb42,
-        type: 2}
     - target: {fileID: 3305156293495031659, guid: 2ef7f756a921fe34296d509694a58b59,
         type: 3}
       propertyPath: m_Name

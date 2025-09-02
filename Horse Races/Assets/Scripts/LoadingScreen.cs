@@ -9,7 +9,7 @@ public class LoadingScreen : MonoBehaviour
     [SerializeField] Image bar;
     [SerializeField] Text flavorText;
     [SerializeField] SceneChanger sceneChanger;
-    [SerializeField] public string[] messages;
+    string[] messages;
     int randomText;
     public bool idealEnd = false;
 
@@ -45,5 +45,9 @@ public class LoadingScreen : MonoBehaviour
         if (bar.fillAmount>0.98f) {
             sceneChanger.SwitchScene(sceneChanger.nextScene);
         }
+    }
+
+    public void SetLanguage(string[] messageTL) {
+        messages = messageTL;
     }
 }
