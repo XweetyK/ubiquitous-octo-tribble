@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 999385258805395148}
   - component: {fileID: 5544047681701375338}
   m_Layer: 5
-  m_Name: No
+  m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 999385260508431765}
   - component: {fileID: 1929678960899426633}
   m_Layer: 5
-  m_Name: Yes
+  m_Name: Return
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

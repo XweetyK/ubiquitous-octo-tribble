@@ -105,6 +105,7 @@ public class MainMenu : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 if (settingsMenuOpen) {
                     SettingsMenu();
+                    GameObject.FindObjectOfType<Language>().UpdateLanguage();
                     AudioManager.Instance.PlaySFX("Cancel");
                 }
                 if (cathyMenuOpen) {

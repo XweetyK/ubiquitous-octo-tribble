@@ -6,7 +6,6 @@ using Kino;
 
 public class StageSelectMenu : MonoBehaviour {
     [SerializeField] Text trackUI;
-    [SerializeField] string[] trackName;
     [SerializeField] Image mapUI;
     [SerializeField] Sprite[] mapImg;
     [SerializeField] Sprite specialMap;
@@ -22,6 +21,7 @@ public class StageSelectMenu : MonoBehaviour {
     int track = 1;
     GameObject cam;
     bool special = false;
+    string[] trackName;
 
     private void Start() {
         cam = GameObject.FindObjectOfType<Camera>().gameObject;
@@ -130,7 +130,7 @@ public class StageSelectMenu : MonoBehaviour {
             
         } else {
             winnerUI.sprite = winnerImg[13];
-            winnerName.text = "No Data";
+            winnerName.text = "---";
             winnerUI.color = Color.gray;
         }
             winnerUI.color = Color.white;
@@ -164,5 +164,9 @@ public class StageSelectMenu : MonoBehaviour {
             winners[6] = PlayerPrefs.GetInt("Map7");
         } else { winners[6] = -1; }
 
+    }
+
+    public void SetTrackName(string[] names) {
+        trackName = names;
     }
 }

@@ -12,8 +12,8 @@ public class MINUSONE : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.P)) {
-            if (Input.GetKeyDown(KeyCode.O)) {
+        if (Input.GetKey(KeyCode.O)) {
+            if (Input.GetKeyDown(KeyCode.P)) {
                 SceneManager.LoadScene("TEST");
             }
         }

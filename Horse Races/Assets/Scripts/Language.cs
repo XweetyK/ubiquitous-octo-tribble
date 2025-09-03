@@ -65,18 +65,47 @@ public class MirrorTL {
     [SerializeField] public Sprite FloorEN;
     [SerializeField] public Sprite FloorES;
 }
+[System.Serializable]
+public class LoadingTL {
+    public bool Active;
+    [SerializeField] public Text Title;
+    [SerializeField] public LoadingScreen Text;
+    [HideInInspector] public string[] messages;
+    [SerializeField] public Text Loading;
+}
+[System.Serializable]
+public class JukeboxTL {
+    public bool Active;
+    [SerializeField] public Text Title;
+    [SerializeField] public Text Message;
+}
+[System.Serializable]
+public class StageTL {
+    public bool Active;
+    [SerializeField] public Text Title;
+    [SerializeField] public Text Previous;
+    [SerializeField] public StageSelectMenu Menu;
+    [HideInInspector] public string[] Track;
+}
 
-public class Language : MonoBehaviour {
-    [SerializeField] public Lang language;
+    public class Language : MonoBehaviour {
+    public Lang language;
     [SerializeField] Localization localization;
-    public DialBoxTL DialogueBox;
-    public MenuTL MainMenu;
-    public HelpTL HelpMenu;
-    public TutorialTL TutorialMenu;
-    public PauseTL PauseMenu;
-    public MirrorTL MirrorFloor;
+    public DialBoxTL DialogueBox; //Done
+    public MenuTL MainMenu; //Missing animation
+    public HelpTL HelpMenu; 
+    public TutorialTL TutorialMenu; //Done
+    public PauseTL PauseMenu; //Done
+    public MirrorTL MirrorFloor; //Done
+    public LoadingTL LoadingMenu; //Done
+    public JukeboxTL JukeboxMenu; //Done
+    public StageTL StageMenu;
 
     private void Awake() {
+        UpdateLanguage();
+    }
+
+    public void UpdateLanguage() {
         language = (Lang)PlayerPrefs.GetInt("Language");
 
         if (MainMenu.Active) {
@@ -89,8 +118,25 @@ public class Language : MonoBehaviour {
             UpdatePauseLanguage();
         }
         if (MirrorFloor.Active) {
-            UpdateMirrorFloor();
+            UpdateMirrorFloorLanguage();
         }
+        if (TutorialMenu.Active) {
+            UpdateTutorialLanguage();
+        }
+        if (LoadingMenu.Active) {
+            UpdateLoadingLanguage();
+        }
+        if (JukeboxMenu.Active) {
+            UpdateJukeboxLanguage();
+        }
+        if (StageMenu.Active) {
+            UpdateStageSelectLanguage();
+        }
+    }
+
+    public void SetGlobalLanguage(Lang SetLang) {
+        PlayerPrefs.SetInt("Language", ((int)SetLang));
+        UpdateLanguage();
     }
 
     private void UpdateMainMenuLanguage() {
@@ -198,7 +244,7 @@ public class Language : MonoBehaviour {
                 break;
         }
     }
-    private void UpdateMirrorFloor() {
+    private void UpdateMirrorFloorLanguage() {
         switch (language) {
             case Lang.EN:
                 for (int i = 0; i < MirrorFloor.Floor.Length; i++) {
@@ -212,5 +258,90 @@ public class Language : MonoBehaviour {
                 break;
         }
     }
+    private void UpdateTutorialLanguage() {
+        switch (language) {
+            case Lang.EN:
+                TutorialMenu.Title.sprite = TutorialMenu.TitleES;
+                for (int i = 0; i < TutorialMenu.Line.Length - 1; i++) {
+                    TutorialMenu.Line[i].sprite = TutorialMenu.LineEN[i];
+                }
+                break;
+            case Lang.ES:
+                TutorialMenu.Title.sprite = TutorialMenu.TitleES;
+                for (int i = 0; i < TutorialMenu.Line.Length-1; i++) {
+                    TutorialMenu.Line[i].sprite = TutorialMenu.LineES[i];
+                }
+                break;
+        }
+    }
+    private void UpdateLoadingLanguage() {
+        LoadingMenu.messages = new string[4];
+        switch (language) {
+            case Lang.EN:
+                LoadingMenu.Title.text = "Horse Race Tips";
 
+                LoadingMenu.messages[0] = "Horses can run at horse speed.";
+                LoadingMenu.messages[1] = "Demian is in the code but he does nothing\n(or so we think).";
+                LoadingMenu.messages[2] = "You're never safe from a horse.";
+                LoadingMenu.messages[3] = "Press UP for a surprise (no, not here).";
+
+                LoadingMenu.Loading.text = "NOW LOADING...";
+                break;
+            case Lang.ES:
+                LoadingMenu.Title.text = "Tips Para Carreras";
+
+                LoadingMenu.messages[0] = "Los caballos pueden correr a velocidad caballo.";
+                LoadingMenu.messages[1] = "Demian esta en el codigo pero no hace nada\n(o eso creemos).";
+                LoadingMenu.messages[2] = "Nunca estas a salvo de un caballo.";
+                LoadingMenu.messages[3] = "Presiona ARRIBA para una sorpresa (no, aqui no).";
+
+                LoadingMenu.Loading.text = "CARGANDO...";
+                break;
+        }
+        LoadingMenu.Text.SetLanguage(LoadingMenu.messages);
+    }
+    private void UpdateJukeboxLanguage() {
+        switch (language) {
+            case Lang.EN:
+                JukeboxMenu.Title.text = "BGM Jukebox";
+                JukeboxMenu.Message.text = "Ricardo was supposed to play his song but The middle doesn't mess with copyright laws";
+                break;
+            case Lang.ES:
+                JukeboxMenu.Title.text = "Tocadiscos BGM";
+                JukeboxMenu.Message.text = "Se suponia que Ricardo usaria su cancion, pero El Medio no se mete con las leyes de copyright";
+                break;
+        }
+    }
+    private void UpdateStageSelectLanguage() {
+        StageMenu.Track= new string[7];
+        switch (language) {
+            case Lang.EN:
+                StageMenu.Title.text = "SELECT YOUR TRACK";
+
+                StageMenu.Track[0] = "< (MIRROR TRACK 1) >";
+                StageMenu.Track[1] = "< (MIRROR TRACK 2) >";
+                StageMenu.Track[2] = "< (MIRROR TRACK 3) >";
+                StageMenu.Track[3] = "< (IDEAL MIRROR PRIX 1) >";
+                StageMenu.Track[4] = "< (IDEAL MIRROR PRIX 2) >";
+                StageMenu.Track[5] = "< (IDEAL MIRROR PRIX 3) >";
+                StageMenu.Track[6] = "< (BATTLE ROYALE) >";
+
+                StageMenu.Previous.text = "Previous winner";
+                break;
+            case Lang.ES:
+                StageMenu.Title.text = "SELECCIONA LA PISTA";
+
+                StageMenu.Track[0] = "< (PISTA ESPEJO 1) >";
+                StageMenu.Track[1] = "< (PISTA ESPEJO 2) >";
+                StageMenu.Track[2] = "< (PISTA ESPEJO 3) >";
+                StageMenu.Track[3] = "< (IDEAL MIRROR PRIX 1) >";
+                StageMenu.Track[4] = "< (IDEAL MIRROR PRIX 2) >";
+                StageMenu.Track[5] = "< (IDEAL MIRROR PRIX 3) >";
+                StageMenu.Track[6] = "< (BATTLE ROYALE) >";
+
+                StageMenu.Previous.text = "Ultimo gamador";
+                break;
+        }
+        StageMenu.Menu.SetTrackName(StageMenu.Track);
+    }
 }

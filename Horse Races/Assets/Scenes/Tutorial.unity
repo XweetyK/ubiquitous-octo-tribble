@@ -614,6 +614,105 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &927537868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927537870}
+  - component: {fileID: 927537869}
+  m_Layer: 0
+  m_Name: Localization
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &927537869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927537868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d591658e9d787549b8fda8dfe52ecf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: 0
+  localization: {fileID: 0}
+  DialogueBox:
+    Active: 0
+    DanteDialog: {fileID: 0}
+    HeathDialog: {fileID: 0}
+    YiSangDialog: {fileID: 0}
+    GregorDialog: {fileID: 0}
+    FaustDialog: {fileID: 0}
+    DonDialog: {fileID: 0}
+    IdealDialog: {fileID: 0}
+  MainMenu:
+    Active: 0
+    StartBtn: {fileID: 0}
+    SettingsBtn: {fileID: 0}
+    ExtraBtn: {fileID: 0}
+    JukeboxBtn: {fileID: 0}
+    QuitBtn: {fileID: 0}
+    CathyTitle: {fileID: 0}
+    CathyText: {fileID: 0}
+    CathyYesBtn: {fileID: 0}
+    CathyNoBtn: {fileID: 0}
+    SettingsTitle: {fileID: 0}
+    PopUpTitle: {fileID: 0}
+    PopUpText: {fileID: 0}
+    PopUpContinue: {fileID: 0}
+  TutorialMenu:
+    Active: 1
+    Title: {fileID: 1199450826}
+    Line:
+    - {fileID: 533470049}
+    - {fileID: 1352638868}
+    TitleES: {fileID: 0}
+    TitleEN: {fileID: 21300000, guid: b3b9774a254180c42a06398231593d52, type: 3}
+    LineES:
+    - {fileID: 0}
+    - {fileID: 0}
+    LineEN:
+    - {fileID: 21300000, guid: 963eff14f638a8d4db1aebc01e6ce726, type: 3}
+    - {fileID: 21300000, guid: 166566d9637496b44b0b49b95d209ae7, type: 3}
+  PauseMenu:
+    Active: 0
+    Title: {fileID: 0}
+    ResumeBtn: {fileID: 0}
+    MenuBtn: {fileID: 0}
+  MirrorFloor:
+    Active: 0
+    Floor: []
+    FloorEN: {fileID: 0}
+    FloorES: {fileID: 0}
+  LoadingMenu:
+    Active: 0
+    Title: {fileID: 0}
+    Text: {fileID: 0}
+    messages: []
+    Loading: {fileID: 0}
+--- !u!4 &927537870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927537868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0547037, y: 0.093795456, z: -278.51935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1165213738
 GameObject:
   m_ObjectHideFlags: 1

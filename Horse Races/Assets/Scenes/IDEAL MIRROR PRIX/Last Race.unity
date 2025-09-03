@@ -811,6 +811,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e6dca132e5f5d741a732e0f012b7286, type: 3}
+--- !u!212 &93005548 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6383872114634884003, guid: 4d6c825f64a194c49ae798ce872d9fe9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1297636686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116558072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12719,10 +12725,25 @@ MonoBehaviour:
     ResumeBtn: {fileID: 630966571}
     MenuBtn: {fileID: 710549343}
   MirrorFloor:
-    Active: 0
-    Floor: []
-    FloorEN: {fileID: 0}
+    Active: 1
+    Floor:
+    - {fileID: 93005548}
+    - {fileID: 32516201}
+    - {fileID: 1949810535}
+    - {fileID: 1548186065}
+    - {fileID: 1236846900}
+    - {fileID: 850760927}
+    - {fileID: 1517584393}
+    - {fileID: 490853470}
+    - {fileID: 980832680}
+    - {fileID: 44599831}
+    FloorEN: {fileID: 21300000, guid: 45caac9cd327caa488e6dfb9d178a75b, type: 3}
     FloorES: {fileID: 0}
+  LoadingMenu:
+    Active: 0
+    Title: {fileID: 0}
+    Text: {fileID: 0}
+    messages: []
 --- !u!114 &1672702087 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5097985636971219158, guid: f27a49b47271c6c4c8792fb4519e9e98,

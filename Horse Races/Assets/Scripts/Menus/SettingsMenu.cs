@@ -11,6 +11,9 @@ public class SettingsMenu : MonoBehaviour {
     [SerializeField] Image BGMselect;
     [SerializeField] Image SFXselect;
     [SerializeField] Image MasterSelect;
+    [SerializeField] GameObject ToggleCheck;
+    [SerializeField] Text LanguageText;
+    [SerializeField] Text ToggleText;
     int menu = 1;
     float bgm;
     int bgmCount;
@@ -18,14 +21,24 @@ public class SettingsMenu : MonoBehaviour {
     int sfxCount;
     float master;
     int masterCount;
+    Lang language = Lang.EN;
 
     private void Start() {
         LoadAudio();
+        language = (Lang)PlayerPrefs.GetInt("Language");
+        switch (language) {
+            case Lang.EN:
+                LanguageText.text = "  ENGLISH >";
+                break;
+            case Lang.ES:
+                LanguageText.text = "< ESPAÑOL";
+                break;
+        }
     }
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            if (menu != 3) {
+            if (menu != 5) {
                 menu++;
             }
             AudioManager.Instance.PlaySFX("Key");
@@ -39,7 +52,41 @@ public class SettingsMenu : MonoBehaviour {
             UpdateUI();
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            menu = 1;
+        }
+
         if (menu == 1) {
+            if (Input.GetButtonDown("Submit")) {
+                if (ToggleCheck.activeSelf) {
+                    ToggleCheck.SetActive(false);
+                    Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+                    //activate fullscreen
+                }
+                else {
+                    ToggleCheck.SetActive(true);
+                    Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+                    //activate window mode
+                }
+            }
+        }
+
+        if (menu == 2) {
+            if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+                LanguageText.text = "  ENGLISH >";
+                language = Lang.EN;
+                PlayerPrefs.SetInt("Language", ((int)language));
+                AudioManager.Instance.PlaySFX("Key");
+            }
+            if (Input.GetKeyDown(KeyCode.RightArrow)) {
+                LanguageText.text = "< ESPAÑOL";
+                language = Lang.ES;
+                PlayerPrefs.SetInt("Language", ((int)language));
+                AudioManager.Instance.PlaySFX("Key");
+            }
+        }
+
+        if (menu == 3) {
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
                 if (masterCount < 10) {
                     masterCount++;
@@ -61,7 +108,7 @@ public class SettingsMenu : MonoBehaviour {
                 UpdateUI();
             }
         }
-        if (menu == 2) {
+        if (menu == 4) {
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
                 if (bgmCount < 10) {
                     bgmCount++;
@@ -79,7 +126,7 @@ public class SettingsMenu : MonoBehaviour {
                 UpdateUI();
             }
         }
-        if (menu == 3) {
+        if (menu == 5) {
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
                 if (sfxCount < 10) {
                     sfxCount++;
@@ -111,16 +158,36 @@ public class SettingsMenu : MonoBehaviour {
         GlobalVar.Instance.MasterVolume = master;
 
         if (menu == 1) {
-            MasterSelect.color = Color.red;
+            ToggleText.color = Color.red;
+            LanguageText.color = Color.black;
+            MasterSelect.color = Color.yellow;
             BGMselect.color = Color.yellow;
             SFXselect.color = Color.yellow;
         }
         if (menu == 2) {
+            ToggleText.color = Color.black;
+            LanguageText.color = Color.red;
+            MasterSelect.color = Color.yellow;
+            BGMselect.color = Color.yellow;
+            SFXselect.color = Color.yellow;
+        }
+        if (menu == 3) {
+            ToggleText.color = Color.black;
+            LanguageText.color = Color.black;
+            MasterSelect.color = Color.red;
+            BGMselect.color = Color.yellow;
+            SFXselect.color = Color.yellow;
+        }
+        if (menu == 4) {
+            ToggleText.color = Color.black;
+            LanguageText.color = Color.black;
             MasterSelect.color = Color.yellow;
             BGMselect.color = Color.red;
             SFXselect.color = Color.yellow;
         }
-        if (menu == 3) {
+        if (menu == 5) {
+            ToggleText.color = Color.black;
+            LanguageText.color = Color.black;
             MasterSelect.color = Color.yellow;
             BGMselect.color = Color.yellow;
             SFXselect.color = Color.red;

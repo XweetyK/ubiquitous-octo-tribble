@@ -3791,6 +3791,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93397d417f39ada4eba64fdd342ea0ec, type: 3}
+--- !u!114 &1371637732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 999385260508431765, guid: 93397d417f39ada4eba64fdd342ea0ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371637731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1371637733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 999385258805395148, guid: 93397d417f39ada4eba64fdd342ea0ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371637731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1371637734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 999385260404489444, guid: 93397d417f39ada4eba64fdd342ea0ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 1371637731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1387570265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167804631136756593, guid: fe1510f552c1bb94a8558c0f52487afd,
@@ -5424,6 +5460,98 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2066907616}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2011959134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2011959136}
+  - component: {fileID: 2011959135}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2011959135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011959134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d591658e9d787549b8fda8dfe52ecf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: 0
+  localization: {fileID: 0}
+  DialogueBox:
+    Active: 0
+    DanteDialog: {fileID: 0}
+    HeathDialog: {fileID: 0}
+    YiSangDialog: {fileID: 0}
+    GregorDialog: {fileID: 0}
+    FaustDialog: {fileID: 0}
+    DonDialog: {fileID: 0}
+    IdealDialog: {fileID: 0}
+  MainMenu:
+    Active: 0
+    StartBtn: {fileID: 0}
+    SettingsBtn: {fileID: 0}
+    ExtraBtn: {fileID: 0}
+    JukeboxBtn: {fileID: 0}
+    QuitBtn: {fileID: 0}
+    CathyTitle: {fileID: 0}
+    CathyText: {fileID: 0}
+    CathyYesBtn: {fileID: 0}
+    CathyNoBtn: {fileID: 0}
+    SettingsTitle: {fileID: 0}
+    PopUpTitle: {fileID: 0}
+    PopUpText: {fileID: 0}
+    PopUpContinue: {fileID: 0}
+  TutorialMenu:
+    Active: 0
+    Title: {fileID: 0}
+    Line: []
+    TitleES: {fileID: 0}
+    TitleEN: {fileID: 0}
+    LineES: []
+    LineEN: []
+  PauseMenu:
+    Active: 1
+    Title: {fileID: 1371637734}
+    ResumeBtn: {fileID: 1371637733}
+    MenuBtn: {fileID: 1371637732}
+  MirrorFloor:
+    Active: 0
+    Floor: []
+    FloorEN: {fileID: 0}
+    FloorES: {fileID: 0}
+  LoadingMenu:
+    Active: 0
+    Title: {fileID: 0}
+    Text: {fileID: 0}
+    messages: []
+--- !u!4 &2011959136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011959134}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5806308, y: 0.49829218, z: -272.88007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2062296130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4167804631136756597, guid: fe1510f552c1bb94a8558c0f52487afd,
