@@ -34,7 +34,6 @@ public class GlobalVar : MonoBehaviour
         if (!PlayerPrefs.HasKey("Language")) {
             PlayerPrefs.SetInt("Language", ((int)language));
         }
-        Debug.Log(PlayerPrefs.GetInt("Language"));
 
         DontDestroyOnLoad(this.gameObject);
     }

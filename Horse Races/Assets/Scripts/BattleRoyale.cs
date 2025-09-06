@@ -15,6 +15,7 @@ public class BattleRoyale : MonoBehaviour {
     private void Start() {
         Invoke("StartShrinking", shrinkDelay);
         AudioManager.Instance.PlayBGM("G_BattleRoyale", 1f, 0f);
+        Debug.Log(gameObject.name);
     }
 
     private void Update() {

@@ -668,9 +668,9 @@ MonoBehaviour:
   coin: {fileID: 1642604011853569173}
   coinText: {fileID: 1248113077878612520}
   UIIcon: {fileID: 0}
+  gameMode: 0
   Boost: 10
   EGO: 0
-  battleRoyale: 0
   egoActive: 1
   aggro: 1
   egoInitialDelay: 6

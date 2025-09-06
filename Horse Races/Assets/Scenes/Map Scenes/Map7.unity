@@ -1852,6 +1852,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf31baaa230c1242879c1b040969e9a, type: 3}
+--- !u!1001 &361478452
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031636, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305156293495031659, guid: 2ef7f756a921fe34296d509694a58b59,
+        type: 3}
+      propertyPath: m_Name
+      value: AUDIO MANAGER
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ef7f756a921fe34296d509694a58b59, type: 3}
 --- !u!4 &364318130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4167804631136756593, guid: fe1510f552c1bb94a8558c0f52487afd,
@@ -5260,6 +5329,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -5649,6 +5723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
@@ -6095,6 +6174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -6453,6 +6537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: color.r
       value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
@@ -7288,6 +7377,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -8008,6 +8102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: color.r
       value: 0.5345253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
@@ -12263,6 +12362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -12652,6 +12756,11 @@ PrefabInstance:
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
       propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
@@ -18841,6 +18950,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -19210,6 +19324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: color.r
       value: 0.5564089
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
@@ -24405,6 +24524,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
+      propertyPath: gameMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
       propertyPath: battleRoyale
       value: 1
       objectReference: {fileID: 0}
@@ -25350,6 +25474,11 @@ PrefabInstance:
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
         type: 3}
       propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,
+        type: 3}
+      propertyPath: gameMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4167804631136756598, guid: fe1510f552c1bb94a8558c0f52487afd,

@@ -339,7 +339,7 @@ public class StageTL {
                 StageMenu.Track[5] = "< (IDEAL MIRROR PRIX 3) >";
                 StageMenu.Track[6] = "< (BATTLE ROYALE) >";
 
-                StageMenu.Previous.text = "Ultimo gamador";
+                StageMenu.Previous.text = "Ultimo ganador";
                 break;
         }
         StageMenu.Menu.SetTrackName(StageMenu.Track);

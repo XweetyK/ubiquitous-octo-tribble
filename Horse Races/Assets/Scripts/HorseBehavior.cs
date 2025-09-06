@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HorseBehavior : MonoBehaviour {
+    enum GameMode { Normal, BattleRoyale, Boss, BossVS };
+
     [SerializeField] GameObject _name;
     [SerializeField] public Image WinScreen;
     [SerializeField] GameObject DeathSprite;
@@ -11,13 +13,14 @@ public class HorseBehavior : MonoBehaviour {
     [SerializeField] GameObject coin;
     [SerializeField] Text coinText;
     [SerializeField] GameObject UIIcon;
+    [SerializeField] GameMode gameMode;
     public float Boost = 10;
     float EGOBoost;
     Vector3 dir;
     GameManager GM;
     bool launched = false;
     public bool EGO = false;
-    public bool battleRoyale;
+    //public bool battleRoyale;
     public bool egoActive = true;
 
     [Range(1, 3)] public int aggro = 1;
@@ -28,6 +31,7 @@ public class HorseBehavior : MonoBehaviour {
     Vector2 lastDir = Vector2.zero;
 
     public int CoinNumber = 0;
+    GameObject target;
 
     void Start() {
         if (GameManager.Instance != null) {
@@ -80,16 +84,13 @@ public class HorseBehavior : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         if (EGO) {
             if (collision.gameObject.tag == "Horse") {
-                collision.gameObject.GetComponent<HorseBehavior>().Death(color,CoinNumber);
+                collision.gameObject.GetComponent<HorseBehavior>().Death(color, CoinNumber);
                 Camera.main.GetComponent<ShakeObject>().Shake(0.2f);
             }
-            //if (gameObject.tag == "Ricardo" && collision.gameObject.tag == "Sweeper") {
-            //    collision.gameObject.GetComponent<HorseBehavior>().Death(color);
-            //}
             if (collision.gameObject.tag == "Ideal") {
                 Time.timeScale = 0.3f;
                 Camera.main.GetComponent<ShakeObject>().Shake(0.2f);
-                collision.gameObject.GetComponent<HorseBehavior>().Death(color,CoinNumber);
+                collision.gameObject.GetComponent<HorseBehavior>().Death(color, CoinNumber);
                 LaunchHorse(GameObject.FindObjectOfType<Carrot>().transform.position);
             }
             coin.SetActive(false);
@@ -103,6 +104,16 @@ public class HorseBehavior : MonoBehaviour {
         }
 
         FlipSprite();
+    }
+    //-------------------------BOSS TRIGGER-----------------------------------------------------------------------------------------------------------------------
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (gameMode == GameMode.Boss && coin.activeSelf) {
+            if (collision.gameObject.tag == "Horse") {
+                target = collision.gameObject;
+                GameManager.Instance.PauseGame();
+                BossFight.Instance.StartClash(this, target);
+            }
+        }
     }
     //-------------------------LAUNCH HORSE--------------------------------------------------------------------------------------------------------------------
     void LaunchHorse() {
@@ -120,11 +131,12 @@ public class HorseBehavior : MonoBehaviour {
     }
     //-------------------------EGO-----------------------------------------------------------------------------------------------------------------------------
     void CoinChance() {
+        //FREE RACE MODE EGO
         if (!GM.End() && this.gameObject.name != "Yi Sang") {
             int chance = Random.Range(0, 6);
             switch (aggro) {
                 case 1:
-                    if (battleRoyale) {
+                    if (gameMode == GameMode.BattleRoyale) {
                         if (chance > 3) {
                             CoinFlip();
                         }
@@ -135,7 +147,7 @@ public class HorseBehavior : MonoBehaviour {
                     }
                     break;
                 case 2:
-                    if (battleRoyale) {
+                    if (gameMode == GameMode.BattleRoyale) {
                         if (chance % 2 == 0) {
                             CoinFlip();
                         }
@@ -151,6 +163,17 @@ public class HorseBehavior : MonoBehaviour {
                     break;
             }
         }
+
+        if (gameMode == GameMode.Boss) {
+            if (GM.pauseActive != GameManager.PauseStatus.Pause) {
+                if (!coin.activeSelf) {
+                    AudioManager.Instance.PlaySFX("ActiveCoin");
+                    coinText.text = " ";
+                    coin.SetActive(true);
+                    HitHorse();
+                }
+            }
+        }
     }
 
     void CoinFlip() {
@@ -159,7 +182,7 @@ public class HorseBehavior : MonoBehaviour {
             coinText.text = " ";
             coin.SetActive(true);
             if (aggro == 1) {
-                if (battleRoyale) {
+                if (gameMode == GameMode.BattleRoyale) {
                     if (EGO == false && Random.Range(0, 6) > 2) {
                         CoinNumber = Random.Range(1, 11);
                         Invoke("HitHorse", 1f);
@@ -173,7 +196,7 @@ public class HorseBehavior : MonoBehaviour {
                 }
             }
             if (aggro == 2) {
-                if (battleRoyale) {
+                if (gameMode == GameMode.BattleRoyale) {
                     CoinNumber = 99;
                     Invoke("HitHorse", 1f);
                 } else {
@@ -193,16 +216,16 @@ public class HorseBehavior : MonoBehaviour {
         }
     }
 
-    Vector3 FindHorses() {
+    GameObject FindHorses() {
         HorseBehavior[] horses = new HorseBehavior[GameObject.FindObjectsOfType<HorseBehavior>().Length];
         horses = GameObject.FindObjectsOfType<HorseBehavior>();
         float dist = 9999;
-        Vector3 closest = Vector2.zero;
+        GameObject closest = null;
 
         for (int i = 0; i < horses.Length; i++) {
             if (horses[i].gameObject != this.gameObject && Vector3.Distance(this.transform.position, horses[i].transform.position) < dist) {
                 dist = Vector3.Distance(this.transform.position, horses[i].transform.position);
-                closest = horses[i].transform.position;
+                closest = horses[i].gameObject;
             }
         }
         return closest;
@@ -210,14 +233,24 @@ public class HorseBehavior : MonoBehaviour {
 
     void HitHorse() {
         if (GM.pauseActive != GameManager.PauseStatus.Pause && !GameManager.Instance.End()) {
-            coinText.text = CoinNumber.ToString();
-            coin.GetComponent<Image>().color = Color.yellow;
-            coin.GetComponent<Animator>().StopPlayback();
-            AudioManager.Instance.PlaySFX("Coin");
-            if (GameObject.FindObjectsOfType<HorseBehavior>().Length > 1) {
-                gameObject.GetComponent<Rigidbody2D>().velocity = (FindHorses() - transform.position).normalized * GM.HorseSpeed;
-                EGOBoost = Boost;
-                EGO = true;
+            if (gameMode != GameMode.Boss) {
+                coinText.text = CoinNumber.ToString();
+                coin.GetComponent<Image>().color = Color.yellow;
+                coin.GetComponent<Animator>().StopPlayback();
+                AudioManager.Instance.PlaySFX("Coin");
+                if (GameObject.FindObjectsOfType<HorseBehavior>().Length > 1) {
+                    gameObject.GetComponent<Rigidbody2D>().velocity = (FindHorses().transform.position - transform.position).normalized * GM.HorseSpeed;
+                    EGOBoost = Boost;
+                    EGO = true;
+                }
+            } else {
+                if (GameObject.FindObjectsOfType<HorseBehavior>().Length > 1) {
+                    target = FindHorses();
+                    gameObject.GetComponent<Rigidbody2D>().velocity = (target.transform.position - transform.position).normalized * GM.HorseSpeed;
+                    EGOBoost = Boost;
+                    Debug.Log(target.name);
+                    //EGO = true;
+                }
             }
         }
     }
@@ -244,7 +277,7 @@ public class HorseBehavior : MonoBehaviour {
                 UIIcon.GetComponent<ShakeObject>().Shake(0.5f);
                 UIIcon.GetComponent<FadeColor>().StartFade(2f);
             }
-            if (battleRoyale && UIIcon != null) {
+            if (gameMode == GameMode.BattleRoyale && UIIcon != null) {
                 GameObject.FindObjectOfType<BattleRoyale>().RemoveHorse(UIIcon);
             }
             Destroy(this.gameObject);
@@ -265,5 +298,14 @@ public class HorseBehavior : MonoBehaviour {
         if (coin.activeSelf) {
             CoinFlip();
         }
+    }
+
+    public void ResumeClash() {
+        coin.SetActive(false);
+        CoinNumber = 0;
+        EGO = false;
+        EGOBoost = 0;
+        target = null;
+        GameManager.Instance.PauseGame();
     }
 }
