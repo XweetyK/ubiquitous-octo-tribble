@@ -74,6 +74,15 @@ public class LoadingTL {
     [SerializeField] public Text Loading;
 }
 [System.Serializable]
+public class DownloadTL {
+    public bool Active;
+    [SerializeField] public LoadingScreen Text;
+    [HideInInspector] public string message;
+    [SerializeField] public Text Loading;
+    [SerializeField] public Text Horses;
+    [SerializeField] public string download;
+}
+[System.Serializable]
 public class JukeboxTL {
     public bool Active;
     [SerializeField] public Text Title;
@@ -98,6 +107,7 @@ public class StageTL {
     public PauseTL PauseMenu; //Done
     public MirrorTL MirrorFloor; //Done
     public LoadingTL LoadingMenu; //Done
+    public DownloadTL DownloadMenu; //Done
     public JukeboxTL JukeboxMenu; //Done
     public StageTL StageMenu;
 
@@ -125,6 +135,9 @@ public class StageTL {
         }
         if (LoadingMenu.Active) {
             UpdateLoadingLanguage();
+        }
+        if (DownloadMenu.Active) {
+            UpdateDownloadLanguage();
         }
         if (JukeboxMenu.Active) {
             UpdateJukeboxLanguage();
@@ -299,6 +312,31 @@ public class StageTL {
                 break;
         }
         LoadingMenu.Text.SetLanguage(LoadingMenu.messages);
+    }
+    private void UpdateDownloadLanguage() {
+        switch (language) {
+            case Lang.EN:
+
+                DownloadMenu.message = "Welcome to the amazing equine world of Limbus Stable!" +
+                    "\nWhy are they horses? It doesn't matter, they only care about one thing... and it's RACING!" +
+                    "\n\nAre you ready to train them all, dear manager?\n\n(This is a fake screen, no data is being downloaded lol)";
+
+                DownloadMenu.Loading.text = "NOW LOADING...";
+                DownloadMenu.Horses.text = "HORSES";
+                DownloadMenu.download = "DOWNLOADING HORSE DATA %";
+                break;
+            case Lang.ES:
+
+                DownloadMenu.message = "Bienvenido al maravilloso mundo equino de Limbus Stable!" +
+                    "\nPorque son caballos? No importa, a ellos solo les importa una cosa... Y son LAS CARRERAS!" +
+                    "\n\nEstas listo para entrenarlos a todos, querido gerente?\n\n(Esta es una pantalla falsa, no se esta descargando nada XD)";
+
+                DownloadMenu.Loading.text = "CARGANDO...";
+                DownloadMenu.Horses.text = "CABALLOS";
+                DownloadMenu.download = "DESCARGANDO DATOS EQUINOS %";
+                break;
+        }
+        DownloadMenu.Text.SetLanguage(DownloadMenu.message,DownloadMenu.download);
     }
     private void UpdateJukeboxLanguage() {
         switch (language) {
